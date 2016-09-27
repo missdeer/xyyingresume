@@ -1,0 +1,49 @@
+# Site settings
+title: "徐英的简历——人事经理，薪资福利经理/主管"
+description: "徐英的简历——人事经理，薪资福利经理/主管"
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Resume settings
+resume_avatar:                  "true"
+resume_name:                    "徐英"
+resume_title:                   "人事经理，薪资福利经理/主管"
+resume_contact_email:           "xu_ying0512@126.com"
+
+# use "yes" to display the email contact button,
+# "no" to display an "I'm not looking for work" message,
+# or remove the resume_looking_for_work option entirely
+# to leave blank
+resume_looking_for_work:        "yes"
+
+# Decide which sections to use
+# comment out to hide
+resume_section_experience:      true
+resume_section_education:       true
+resume_section_projects:        false
+resume_section_skills:          true
+resume_section_recognition:     true
+resume_section_links:           true
+resume_section_associations:    false
+
+# Resume social links
+# uncomment the options you wish to display, and add your own URL
+resume_social_links:
+  #resume_github_url:            "https://github.com/missdeer"
+  resume_twitter_url:           "https://twitter.com/xyying"
+  #resume_dribbble_url:          "https://dribbble.com/jag"
+  resume_facebook_url:          "https://www.facebook.com/missdeerme"
+  resume_linkedin_url:          "https://cn.linkedin.com/in/fan-yang-b9907934"
+  #resume_instagram_url:         "https://i.instagram.com/missdeer"
+  resume_website_url:           "http://xyying.me"
+
+# Design settings
+resume_theme:                   default
+
+# Note: when editing locally, remember to restart
+# your Jekyll server when you edit this file. Changes
+# to _config.yml are only recognized when the server starts

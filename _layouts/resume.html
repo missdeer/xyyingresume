@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+
+      <header class="page-header">
+
+        <!-- You can turn off the avatar in _config.yml by setting to false -->
+        {% if site.resume_avatar == 'true' %}
+        <img src="images/avatar.jpg" alt="my photo" class="avatar" itemprop="image">
+        {% endif %}
+
+        <!-- Your name is defined in the _config.yml file -->
+        <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
+
+        <div class="title-bar">
+
+          <!-- Your title is also defined in the _config.yml file -->
+          <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
+
+          <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
+          {% include icon-links.html %}
+        </div>
+
+        <div class="executive-summary" itemprop="description">
+          <p>担任人力资源经理，能成为部门负责人的左膀右臂，能与公司员工都成为朋友，有过硬的专业能力、良好的职业素养。</p>
+        </div>
+
+        {% if site.resume_looking_for_work == 'yes' %}
+        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button" itemprop="email">联系我</a>
+        {% elsif site.resume_looking_for_work == 'no' %}
+        <a class="contact-button">观望好的工作机会中。</a>
+        {% else %}
+        {% endif %}
+
+      </header>
+
+      {% if site.resume_section_experience %}
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>工作经历</h2>
+        </header>
+
+        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">上海汇聚投资有限公司</h3>
+          <h4 class="resume-item-details" itemprop="description">人力资源经理 &bull; 2014.5 &mdash; 至今</h4>
+          <p class="resume-item-copy">在该公司主要负责集团总部及旗下分子公司员工关系和薪酬福利相关管理工作，根据集团发展战略及人力资源工作规划，完善员工关系、薪酬福利相关制度，建立工作流程。</p>
+          <p class="resume-item-copy">主要工作内容如下：</p>
+          <ul class="resume-item-list">
+          <li>1、进行各岗位工作分析、岗位说明书的编制与定岗定编工作，根据公司发展需要进行组织结构的优化；</li>
+          <li>2、负责集团员工手册的编写，分子公司及代理商日常管理手册及各项工作流程流程的整合汇编；</li>
+          <li>3、集团总部及分子公司员工入离职、岗位异动流程制定与执行情况监督、劳资关系处理、薪资福利核算及实施情况监管等；</li>
+          <li>4、集团年度薪酬福利方案的编制、实施；</li>
+          <li>5、集团总部及分子公司人力资源预算审核及实施情况的监督管理工作；</li>
+          <li>6、按月、季度、年度进行集团人员情况、人力成本的汇总分析，形成报表上报集团高层，及时更新维护员工信息；</li>
+          <li>7、部门的日常事务管理工作，完成本部门员工工作考核、激励及部门预算和控制工作；</li>
+          <li>8、在职期间兼任过招聘、绩效、培训等相关工作。</li>
+          </ul>
+        </div><!-- end of resume-item -->
+
+        <!-- another resume item -->
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">上海佐野贸易有限公司</h3>
+          <h4 class="resume-item-details" itemprop="description">行政人事 &bull; 2012.8 &mdash; 2014.4</h4>
+          <p class="resume-item-copy">人事工作：</p>
+          <ul class="resume-item-list">
+            <li>1、公积金和社保：社保和公积金账户开户、每月社保和公积金的转入转出、年度企业平均工资申报、工伤申报工作；</li>
+            <li>2、人员招聘：招聘信息的刷新、面试通知；</li>
+            <li>3、档案管理：员工电子档案的整理和完善；</li>
+            <li>4、员工活动：员工生日信息发布、公司员工活动与年会的联系执行；</li>
+            <li>5、员工关系：员工入职/离职手续办理、招退工办理、劳动合同的签订；</li>
+            <li>6、绩效考核：每月考勤统计、季度考核情况汇总。</li>
+          </ul>      
+          <p class="resume-item-copy">行政工作：</p>
+          <ul class="resume-item-list">
+            <li>1、公司商标注册；</li>
+            <li>2、企业营业执照年检、实收资本和注册地址变更；</li>
+            <li>3、固定资产盘点和编号工作；</li>
+            <li>4、公司展会联系与组织；</li>
+            <li>5、公务用车使用情况登记、车辆保险续保；</li>
+            <li>6、公司宣传资料、名片、礼品等的联系制作；</li>
+            <li>7、公司网站域名续费和邮箱管理；</li>
+            <li>8、办公室日常事务的处理：信件的收发登记、办公环境维护、办公用品采购等。</li>
+          </ul>
+        </div><!-- end of resume-item -->
+      </section>
+      <!-- end Experience -->
+      {% endif %}
+
+      {% if site.resume_section_education %}
+      <!-- begin Education -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>教育经历</h2>
+        </header>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">绍兴文理学院</h3>
+          <h4 class="resume-item-details" itemprop="description">公共事业管理专业，学士学位 &bull; 2008.9 &mdash; 2012.6</h4>
+          <p class="resume-item-copy">主修课程：管理学原理、管理经济学、管理信息系统、人力资源开发与管理、管理心理学、公共事业管理、运筹学、会计学、应用统计学、财务管理、市场营销、行政学原理、行政法学、公共关系学、管理伦理学、市政管理学、管理定量分析、财务管理、宏观经济学、微观经济学、公共政策与分析、劳动保障、社会学。</p>
+			<p class="resume-item-copy">本专业具有研究性、实用性和综合性的特点。研究性表现在必须对公共管理理论与方法进行研究，对当前国内公共管理的热点、重点问题与对策加以研究；实用性是指学生具有善于学习和勇于创新的能力、分析和解决实际问题的能力、适应环境变化和创业竞争的能力、与他人协作和国际交往的能力；综合性即以政治学和经济学为主，以法学、社会学、管理学以及工程科学等学科为辅，培养学生参与决策和管理的综合素质。</p>
+        </div>
+
+      </section>
+      <!-- end Education -->
+      {% endif %}
+
+      {% if site.resume_section_skills %}
+      <!-- begin Skills -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>专业技能</h2>
+        </header>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">MS Powerpoint</h4>
+          <p class="resume-item-copy">熟练</p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">MS Excel</h4>
+          <p class="resume-item-copy">熟练</p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">MS Word</h4>
+          <p class="resume-item-copy">熟练</p>
+        </div>
+
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">英语</h4>
+          <p class="resume-item-copy">良好</p>
+        </div>
+      </section>
+      <!-- end Skills -->
+      {% endif %}
+
+      {% if site.resume_section_links %}
+      <!-- begin Links -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>其他链接</h2>
+        </header>
+
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            <li><a href="https://blog.minidump.info">博客</a></li>
+          </ul>
+        </div>
+
+      </section>
+      <!-- end Links -->
+      {% endif %}
+
+      <footer class="page-footer">
+        <p class="footer-line">Made by <a href="http://twitter.com/xyying">@xyying</a>.</p>
+      </footer>
+
+    </div>
+
+  </body>
+
+</html>
