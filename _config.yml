@@ -1,6 +1,6 @@
 # Site settings
-title: "Xu Ying Resume——人力资源经理（员工关系、薪酬福利）"
-description: "Xu Ying Resume——人力资源经理（员工关系、薪酬福利）"
+title: "Xu Ying Resume——人力资源经理（熟悉人力资源六大模块，尤其擅长员工关系、薪酬福利方面的工作）"
+description: "Xu Ying Resume——人力资源经理（熟悉人力资源六大模块，尤其擅长员工关系、薪酬福利方面的工作）"
 
 # Build settings
 markdown: kramdown
@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Xu Ying"
-resume_title:                   "人力资源经理（员工关系、薪酬福利）"
+resume_title:                   "人力资源经理"
 resume_contact_email:           "xu_ying0512@126.com"
 
 # use "yes" to display the email contact button,
