@@ -34,12 +34,12 @@ resume_section_associations:    false
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
   #resume_github_url:            "https://github.com/missdeer"
-  resume_twitter_url:           "https://twitter.com/xyying"
+  #resume_twitter_url:           "https://twitter.com/xyying"
   #resume_dribbble_url:          "https://dribbble.com/jag"
   #resume_facebook_url:          "https://www.facebook.com/missdeerme"
   resume_linkedin_url:          "https://www.linkedin.com/in/ying-xu-29136552/zh-cn"
   #resume_instagram_url:         "https://i.instagram.com/missdeer"
-  resume_website_url:           "http://xyying.me"
+  resume_website_url:           "https://resume.minidump.info"
 
 # Design settings
 resume_theme:                   default
